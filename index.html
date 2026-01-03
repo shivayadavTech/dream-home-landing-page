@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dwello - Find your dream home landing page</title>
+     <meta name="description" content="Explore our curated selection of exquisite
+properties meticulously tailored to your unique dream home vision.">
+    <meta name="keywords" content="Dream home,Real estate,home property,modern home,budget friendly home, New home ">
+    <meta name="author" content="Dwello">
+    <!-- Bootstrap 5  -->
+    <link rel="stylesheet" href="vendor/bootstrap_5/bootstrap.min.css">
+    <!-- external style-->
+    <link rel="stylesheet" href="vendor/style/style.css">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Dwello -property dealer">
+    <meta property="og:description" content="8K+ Houses Available,6K+ Houses Sold, 2K+ Trusted Agent">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="media/profile.png">
+</head>
+<body>
+    <a class="visually-hidden-focusable" href="#main">Skip to content</a>
+    <!-- Header Section -->
+     <header class="hero-header">
+       <!-- Responsive Navbar -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <!-- Brand/Logo -->
+           <a class="navbar-brand fs-4 fw-bold" href="/">Dwello</a>
+            
+            <!-- Hamburger Button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Collapsible Content -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <!-- Navigation Links (Centered) -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#agents">Agents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- Sign Up Button (Right Aligned on Desktop) -->
+                <div class="d-lg-flex">
+                    <button type="button" class="btn rounded-2 sign-up-button">Sign up</button>
+                </div>
+            </div>
+          </div>
+        </nav>
+        <!--hero section-->
+         <section class="hero-section">
+             <div class="row">
+                 <div class="col-12 col-lg-6 text-center text-lg-start pb-2 pb-lg-0">
+                    <h1 class="display-lg-3 display-2 fw-bold">Find Your<br>Dream Home</h1>
+                     <p class="hero-title">Explore our curated selection of exquisite<br>
+                        properties meticulously tailored to your<br>
+                        unique dream home vision
+                     </p>
+                 </div>
+                 <div class="col-12 col-lg-6">
+                     <div class="hero-image-container pb-5 pb-lg-0">
+                        <img src="media/dream_home.png" alt="Exterior view of modern house" class="hero-image img-fluid " > 
+                     </div>                    
+                 </div>
+             </div>      
+        </section>
+    </header>
+    <!-- Filter Section -->
+     <div class="container Filter-container">
+         <div class="Filter-section p-4 rounded-3 shadow ">
+            <form class="row g-3 align-items-center">
+                <div class="col-6 col-lg-3">
+                   <label for="location" class="visually-hidden">Location</label>
+                       <select id="location" name="location" class="form-select form-select-lg">
+                        <option selected>Location</option>
+                         <option value="delhi">Delhi</option>
+                         <option value="mumbai">Mumbai</option>
+                         <option value="bangalore">Bangalore</option>
+                       </select>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <label for="type" class="visually-hidden">Type</label>
+                    <select id="type" name="type" class="form-select form-select-lg">
+                        <option selected>Type</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="villa">Villa</option>
+                        <option value="house">House</option>
+                    </select>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <label for="price" class="visually-hidden">Price</label>
+                    <select id="price" name="price" class="form-select form-select-lg">
+                        <option selected>Price Range</option>
+                        <option value="0-50">₹0 - ₹50L</option>
+                        <option value="50-100">₹50L - ₹1Cr</option>
+                        <option value="100-200">₹1Cr - ₹2Cr</option>
+                    </select>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <button type="submit" class="btn btn-dark btn-lg w-100">Sign up</button>
+                </div>
+            </form>
+        </div>
+      </div>
+
+ <main id="main">
+ <!--About section-->
+ <section class="about-section">
+    <div class="container-fluid">
+        <div class="row w-100 p-0 p-lg-2 g-0 g-lg-5">
+            <div class="col-12 col-lg-6 mb-2 mb-lg-0">
+               <div class="about-image-container">
+                 <img src="media/home.png" alt=" find your home" class=" about-image image-fluid">
+               </div>
+            </div>
+            <div class="col-12 col-lg-6 ps-lg-5 ">
+                <div class="text-lg-start text-center">
+                    <h2 class="section-heading">We Help You To Find<br>Your Dream Home</h2>
+                <p class="section-para">From cozy cottages to luxurious estates, our<br>
+                   dedicated team guides you through every step of the<br>
+                   journey, ensuring your dream home becomes a reality
+                </p>
+                </div>
+                <div class="d-flex gap-2 gap-lg-5 mt-3 mt-lg-5 justify-content-center justify-content-lg-start">
+                    <div>
+                        <h3 class="about-no-heading">8K+</h3>
+                        <p class="section-para fw-bold">Houses Available</p>
+                    </div>
+                    <div>
+                        <h3 class="about-no-heading">6K+</h3>
+                        <p class="section-para fw-bold">Houses Sold</p>
+                    </div>
+                    <div>
+                        <h3 class="about-no-heading">2K+</h3>
+                        <p class="section-para fw-bold">Trusted Agents</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section> 
+ </main>
+ <!--Our facility--> 
+ <section>
+  <div class="container-fluid my-2 my-lg-5">
+    <div class="container text-center">
+      <h2 class="section-heading">Why Choose Us</h2>
+      <p class="section-para">
+        Elevating Your Home Buying Experience with Expertise, Integrity,<br>
+        and Unmatched Personalized Service
+      </p>
+    </div>
+
+    <!-- Carousel for mobile and tablet view only -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade d-block d-lg-none my-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="facility-card text-center">
+            <figure>
+              <img src="media/icon/location.png" alt="Expert Guidance" class="feature-img rounded-2 mx-auto">
+              <figcaption>
+                <h3 class="facility-img-heading">Expert Guidance</h3>
+                <p class="facility-img-para">
+                  Benefit from our team's seasoned expertise for a smooth buying experience.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="facility-card text-center">
+            <figure>
+              <img src="media/icon/service.png" alt="Personalized Service" class="feature-img rounded-2 mx-auto">
+              <figcaption>
+                <h3 class="facility-img-heading">Personalized Service</h3>
+                <p class="facility-img-para">
+                  Our services adapt to your unique needs, making your journey stress-free.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="facility-card text-center">
+            <figure>
+              <img src="media/icon/document.png" alt="Transparent Process" class="feature-img rounded-2 mx-auto">
+              <figcaption>
+                <h3 class="facility-img-heading">Transparent Process</h3>
+                <p class="facility-img-para">
+                  Stay informed with our clear and honest approach to buying your home.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="facility-card text-center">
+            <figure>
+              <img src="media/icon/support.png" alt="Exceptional Support" class="feature-img rounded-2 mx-auto">
+              <figcaption>
+                <h3 class="facility-img-heading">Exceptional Support</h3>
+                <p class="facility-img-para">
+                  Providing peace of mind with our responsive and attentive customer service.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Static layout for desktop view -->
+    <div class="container-fluid d-none d-lg-flex my-5 justify-content-evenly">
+      <div class="facility-card">
+        <figure>
+          <img src="media/icon/location.png" alt="Modern luxury house" class="feature-img rounded-2">
+          <figcaption>
+            <h3 class="facility-img-heading">Expert Guidance</h3>
+            <p class="facility-img-para">
+              Benefit from our team's seasoned expertise for a smooth buying experience
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="facility-card">
+        <figure>
+          <img src="media/icon/service.png" alt="Modern luxury house" class="feature-img rounded-2">
+          <figcaption>
+            <h3 class="facility-img-heading">Personalized Service</h3>
+            <p class="facility-img-para">
+              Our services adapt to your journey stress-free unique needs, making your
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="facility-card">
+        <figure>
+          <img src="media/icon/document.png" alt="Modern luxury house" class="feature-img rounded-2">
+          <figcaption>
+            <h3 class="facility-img-heading">Transparent Process</h3>
+            <p class="facility-img-para">
+              Stay informed with our to buying your home clear and honest approach
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="facility-card">
+        <figure>
+          <img src="media/icon/support.png" alt="Modern luxury house" class="feature-img rounded-2">
+          <figcaption>
+            <h3 class="facility-img-heading">Exceptional Support</h3>
+            <p class="facility-img-para">
+              Providing peace of mind attentive customer service with our responsive and
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!--Popular Residences section-->
+  <section class="Residences_section mt-5">
+    <div class="container">
+      <h2 class="text-center pt-5 section-heading">Our Popular Residences</h2>
+    </div>
+
+    <div class="container-fluid pt-5">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 justify-content-center">
+        <!-- Residence 1 -->
+        <div class="col">
+          <div class="card h-100 residence_container">
+            <div class="ratio ratio-16x9">
+              <img src="media/moder_style.png"
+                   alt="Exterior view of a modern contemporary residence with clean lines and landscaped front yard"
+                   class="card-img-top img-fluid rounded-4"
+                   style="object-fit:cover;">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <cite class="text-muted">San Francisco, California</cite>
+              <div class="d-flex gap-3 flex-wrap mt-2">
+                <small class="text-muted">4 Rooms</small>
+                <small class="text-muted">3,500 sq ft</small>
+              </div>
+              <div class="mt-auto d-flex align-items-center justify-content-between gap-2 pt-3">
+                <button class="btn btn-dark residence_button_style w-100 w-sm-auto" aria-label="Sign up for property 1">Sign up</button>
+                <span class="fw-bold ms-3">$2,500,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Residence 2 -->
+        <div class="col">
+          <div class="card h-100 residence_container">
+            <div class="ratio ratio-16x9">
+              <img src="media/2bh_flat.png"
+                   alt="Exterior of modern apartment with balcony and landscaped frontage"
+                   class="card-img-top img-fluid rounded-4"
+                   style="object-fit:cover;">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <cite class="text-muted">Beverly Hills, California</cite>
+              <div class="d-flex gap-3 flex-wrap mt-2">
+                <small class="text-muted">3 Rooms</small>
+                  <button class="residence_button_style">sign up</button>
+                  <span class="pt-3">$3,700,000</span>
+              </div>
+           </div>
+        </div>
+      </div>
+      </div>      
+    </div>
+  </section>
+ <!-- Review Section -->
+    <section class="py-5">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <h2 class="display-1 display-lg-5 section-heading">What People Say<br>About Dwello</h2>
+            </div>
+
+            <!-- Bootstrap Grid container for review cards -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+
+                <!-- Review Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm testimonial-card">
+                        <img src="media/moder_bedroom.png" class="card-img-top" alt="Modern Bedroom">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <!-- Profile Header -->
+                            <div class="d-flex align-items-start justify-content-between mb-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="media/profile_img1.png" alt="Sarah Nguyen" class="rounded-circle profile-img me-3">
+                                    <div>
+                                        <h5 class="card-title mb-0 fw-bold">Sarah Nguyen</h5>
+                                        <p class="card-text text-muted small">San Francisco</p>
+                                    </div>
+                                </div>
+                                <div class="rating-badge d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#f5c542" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    5.0
+                                </div>
+                            </div>
+                            <!-- Review Text -->
+                            <p class="card-text text-secondary flex-grow-1">
+                                Dwello truly cares about their clients. They listened to my needs and preferences and helped me find the perfect home in the Bay Area. Their professionalism and attention to detail are unmatched.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm testimonial-card">
+                        <img src="media/stylish_bedroom.png" class="card-img-top" alt="Modern Living Room">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <!-- Profile Header -->
+                            <div class="d-flex align-items-start justify-content-between mb-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="media/profile_img2.png" alt="Michael Rodriguez" class="rounded-circle profile-img me-3">
+                                    <div>
+                                        <h5 class="card-title mb-0 fw-bold">Michael Rodriguez</h5>
+                                        <p class="card-text text-muted small">San Diego</p>
+                                    </div>
+                                </div>
+                                <div class="rating-badge d-flex align-items-center">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#f5c542" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    4.5
+                                </div>
+                            </div>
+                            <!-- Review Text -->
+                            <p class="card-text text-secondary flex-grow-1">
+                                I had a fantastic experience working with Dwello. Their expertise and personalized service exceeded my expectations. I found my dream home quickly and smoothly. Highly recommended!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm testimonial-card">
+                        <img src="media/siting_hall.png" class="card-img-top" alt="Cozy Apartment Bedroom">
+                         <div class="card-body p-4 d-flex flex-column">
+                            <!-- Profile Header -->
+                            <div class="d-flex align-items-start justify-content-between mb-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="media/profile_img3.png" alt="Emily Johnson" class="rounded-circle profile-img me-3">
+                                    <div>
+                                        <h5 class="card-title mb-0 fw-bold">Emily Johnson</h5>
+                                        <p class="card-text text-muted small">Los Angeles</p>
+                                    </div>
+                                </div>
+                                <div class="rating-badge d-flex align-items-center">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#f5c542" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    5.0
+                                </div>
+                            </div>
+                            <!-- Review Text -->
+                            <p class="card-text text-secondary flex-grow-1">
+                               Dwello made my dream of owning a home a reality! Their team provided exceptional support and guided me through every step of the process. I couldn't be happier with my new home!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="d-flex justify-content-center mt-5">
+                <button class="btn btn-dark rounded-circle d-flex align-items-center justify-content-center nav-btn mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                    </svg>
+                </button>
+                <button class="btn btn-dark rounded-circle d-flex align-items-center justify-content-center nav-btn mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L12.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </section>
+ <!--help section-->
+    <section class="container-fluid text-center">
+        <div class="container py-5">
+            <h2 class="section-heading">Do You Have Any Questions?<br>Get Help From Us</h2>
+            <div class="d-flex gap-4 justify-content-center pt-3">
+                <p class="section-para">Chat live with our support team</p>
+                <p class="section-para">Browse our FAQ</p>
+            </div>
+            <div class="d-flex gap-2 justify-content-center pt-4">
+                <input type="email" placeholder="enter your email address...." class="rounded-2 ps-2 pe-5 text-dark fw-bold border border-none">
+                <div class=""><button class="sign-up-button rounded-2">Submit</button></div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="bg-light py-4">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-12 col-md-4">
+            <a class="navbar-brand fs-4 fw-bold" href="/">Dwello</a>
+            <p class="mb-0 text-muted">Bringing you closer to your dream home, one click at a time.</p>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold">Company</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a class="text-decoration-none text-muted" href="#about">About</a></li>
+              <li><a class="text-decoration-none text-muted" href="#">Our story</a></li>
+              <li class="text-muted">Careers</li>
+              <li class="text-muted">Our team</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold">Support</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a class="text-decoration-none text-muted" href="#support">Support</a></li>
+              <li class="text-muted">FAQ</li>
+              <li class="text-muted">Contact us</li>
+              <li class="text-muted">Terms of service</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold">Find us</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a class="text-decoration-none text-muted" href="#find-us">Events</a></li>
+              <li class="text-muted">Locations</li>
+              <li class="text-muted">Newsletter</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold">Social</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a class="text-decoration-none text-muted" href="#">Instagram</a></li>
+              <li><a class="text-decoration-none text-muted" href="#">Facebook</a></li>
+              <li><a class="text-decoration-none text-muted" href="#">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12 d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <small class="text-muted mb-2 mb-md-0">&copy; 2025 Dwello. All rights reserved.</small>
+            <small class="text-muted">Made with ♥</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="vendor/bootstrap_5/bootstrap.bundle.min.js"></script>
+</body>
+</html>
