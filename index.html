@@ -3,20 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dwello - Find your dream home landing page</title>
+    <title>Egeal - Find your dream home landing page</title>
      <meta name="description" content="Explore our curated selection of exquisite
 properties meticulously tailored to your unique dream home vision.">
     <meta name="keywords" content="Dream home,Real estate,home property,modern home,budget friendly home, New home ">
-    <meta name="author" content="Dwello">
+    <meta name="author" content="Egeal">
     <!-- Bootstrap 5  -->
     <link rel="stylesheet" href="vendor/bootstrap_5/bootstrap.min.css">
     <!-- external style-->
-    <link rel="stylesheet" href="vendor/style/style.css">
+    <link rel="stylesheet" href="vendor/style/style.css" fetchpriority="high">
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Dwello -property dealer">
+    <meta property="og:title" content="Egeal -property dealer">
     <meta property="og:description" content="8K+ Houses Available,6K+ Houses Sold, 2K+ Trusted Agent">
     <meta property="og:type" content="website">
     <meta property="og:image" content="media/profile.png">
+     <!-- Desktop users  -->
+    <link rel="preload" 
+          as="image"
+          href="media/dream_home_dxt.webp"
+          media="(min-width: 992px)"
+          type="image/webp"
+          fetchpriority="high">
+
+    <!-- Tablet users  -->
+    <link rel="preload" 
+          as="image"
+          href="media/dream_home_tab.webp"
+          media="(min-width: 768px) and (max-width: 991px)"
+          type="image/webp"
+          fetchpriority="high">
+
+    <!-- Mobile users  -->
+    <link rel="preload" 
+          as="image"
+          href="media/dream_home_mobile.webp"
+          media="(max-width: 767px)"
+          type="image/webp"
+          fetchpriority="high">
 </head>
 <body>
     <a class="visually-hidden-focusable" href="#main">Skip to content</a>
@@ -26,7 +49,7 @@ properties meticulously tailored to your unique dream home vision.">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <!-- Brand/Logo -->
-           <a class="navbar-brand fs-4 fw-bold" href="/">Dwello</a>
+           <a class="navbar-brand fs-4 fw-bold" href="/">Egeal</a>
             
             <!-- Hamburger Button for mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,16 +86,44 @@ properties meticulously tailored to your unique dream home vision.">
              <div class="row">
                  <div class="col-12 col-lg-6 text-center text-lg-start pb-2 pb-lg-0">
                     <h1 class="display-lg-3 display-2 fw-bold">Find Your<br>Dream Home</h1>
-                     <p class="hero-title">Explore our curated selection of exquisite<br>
-                        properties meticulously tailored to your<br>
-                        unique dream home vision
+                     <p class="hero-title">Discover premium properties handpicked<br>
+                      to match your lifestyle and aspirations for<br>
+                      the perfect home
                      </p>
                  </div>
-                 <div class="col-12 col-lg-6">
-                     <div class="hero-image-container pb-5 pb-lg-0">
-                        <img src="media/dream_home.png" alt="Exterior view of modern house" class="hero-image img-fluid " > 
-                     </div>                    
-                 </div>
+
+     <div class="col-12 col-lg-6">
+     <div class="hero-image-container pb-5 pb-lg-0">
+
+       <!-- hero picture tag -->
+       <picture>
+           <!-- Desktop -->
+                    <source srcset="media/dream_home_dxt.webp" 
+                            media="(min-width:992px)" 
+                            type="image/webp">
+                    
+                    <!-- Tablet -->
+                    <source srcset="media/dream_home_tab.webp" 
+                            media="(min-width:768px)" 
+                            type="image/webp">
+                    
+                    <!-- Mobile -->
+                    <source srcset="media/dream_home_mobile.webp" 
+                            type="image/webp">
+                    
+                    <!-- Fallback -->
+                    <img src="media/home.png" 
+                         alt="Find your dream home - Modern apartments and villas"
+                         class="hero-image img-fluid"
+                         loading="eager"
+                         fetchpriority="high"
+                         width="1920"
+                         height="1080">
+       </picture>
+       <!-- hero picture tag end -->
+
+    </div>                    
+</div>
              </div>      
         </section>
     </header>
@@ -121,15 +172,25 @@ properties meticulously tailored to your unique dream home vision.">
         <div class="row w-100 p-0 p-lg-2 g-0 g-lg-5">
             <div class="col-12 col-lg-6 mb-2 mb-lg-0">
                <div class="about-image-container">
-                 <img src="media/home.png" alt=" find your home" class=" about-image image-fluid">
+                <picture>
+                  <!-- 1. dextop for (when screen is larger than 992px - Bootstrap md Breakpoint) --> 
+                    <source srcset="media/home-dxt.webp" media="(min-width:992px)" type="image/webp">
+
+                     <!-- 2. Tablet for (when screen is larger than 768px - Bootstrap md Breakpoint) -->
+                    <source media="(min-width: 768px)" srcset="media/home-tab.webp" type="image/webp">
+                  <!-- 3. mobile for (when screen is larger than 768px - Bootstrap md Breakpoint) -->
+                    <source srcset="media/home_mobile.webp">
+
+                <img src="media/home.png" alt=" find your home" class=" about-image image-fluid">
+                </picture>
                </div>
             </div>
             <div class="col-12 col-lg-6 ps-lg-5 ">
                 <div class="text-lg-start text-center">
                     <h2 class="section-heading">We Help You To Find<br>Your Dream Home</h2>
-                <p class="section-para">From cozy cottages to luxurious estates, our<br>
-                   dedicated team guides you through every step of the<br>
-                   journey, ensuring your dream home becomes a reality
+                <p class="section-para">Whether you're seeking a charming starter home or a<br>
+                   grand residence, our expert team is committed to helping you<br>
+                   discover the perfect property that matches your vision
                 </p>
                 </div>
                 <div class="d-flex gap-2 gap-lg-5 mt-3 mt-lg-5 justify-content-center justify-content-lg-start">
@@ -156,9 +217,8 @@ properties meticulously tailored to your unique dream home vision.">
   <div class="container-fluid my-2 my-lg-5">
     <div class="container text-center">
       <h2 class="section-heading">Why Choose Us</h2>
-      <p class="section-para">
-        Elevating Your Home Buying Experience with Expertise, Integrity,<br>
-        and Unmatched Personalized Service
+      Discover Your Perfect Home with Professional Guidance, Transparent<br>
+      Dealings, and Exceptional Personalized Care
       </p>
     </div>
 
@@ -172,7 +232,7 @@ properties meticulously tailored to your unique dream home vision.">
               <figcaption>
                 <h3 class="facility-img-heading">Expert Guidance</h3>
                 <p class="facility-img-para">
-                  Benefit from our team's seasoned expertise for a smooth buying experience.
+                  Our experienced professionals guide you through every step with confidence and care.
                 </p>
               </figcaption>
             </figure>
@@ -186,7 +246,7 @@ properties meticulously tailored to your unique dream home vision.">
               <figcaption>
                 <h3 class="facility-img-heading">Personalized Service</h3>
                 <p class="facility-img-para">
-                  Our services adapt to your unique needs, making your journey stress-free.
+                  We tailor our services to match your specific requirements, ensuring a seamless and effortless experience.
                 </p>
               </figcaption>
             </figure>
@@ -200,7 +260,7 @@ properties meticulously tailored to your unique dream home vision.">
               <figcaption>
                 <h3 class="facility-img-heading">Transparent Process</h3>
                 <p class="facility-img-para">
-                  Stay informed with our clear and honest approach to buying your home.
+                    We ensure complete transparency and clarity throughout your entire home-buying journey.
                 </p>
               </figcaption>
             </figure>
@@ -214,7 +274,7 @@ properties meticulously tailored to your unique dream home vision.">
               <figcaption>
                 <h3 class="facility-img-heading">Exceptional Support</h3>
                 <p class="facility-img-para">
-                  Providing peace of mind with our responsive and attentive customer service.
+                  We're here to support you every step of the way with dedicated and caring assistance.
                 </p>
               </figcaption>
             </figure>
@@ -240,7 +300,7 @@ properties meticulously tailored to your unique dream home vision.">
           <figcaption>
             <h3 class="facility-img-heading">Expert Guidance</h3>
             <p class="facility-img-para">
-              Benefit from our team's seasoned expertise for a smooth buying experience
+              Our experienced professionals guide you through every step with confidence and care.
             </p>
           </figcaption>
         </figure>
@@ -252,7 +312,7 @@ properties meticulously tailored to your unique dream home vision.">
           <figcaption>
             <h3 class="facility-img-heading">Personalized Service</h3>
             <p class="facility-img-para">
-              Our services adapt to your journey stress-free unique needs, making your
+              We tailor our services to match your specific requirements, ensuring a seamless and effortless experience.
             </p>
           </figcaption>
         </figure>
@@ -297,10 +357,13 @@ properties meticulously tailored to your unique dream home vision.">
         <div class="col">
           <div class="card h-100 residence_container">
             <div class="ratio ratio-16x9">
+
+              <picture>
               <img src="media/moder_style.png"
                    alt="Exterior view of a modern contemporary residence with clean lines and landscaped front yard"
                    class="card-img-top img-fluid rounded-4"
                    style="object-fit:cover;">
+                </picture>
             </div>
             <div class="card-body d-flex flex-column">
               <cite class="text-muted">San Francisco, California</cite>
@@ -320,10 +383,22 @@ properties meticulously tailored to your unique dream home vision.">
         <div class="col">
           <div class="card h-100 residence_container">
             <div class="ratio ratio-16x9">
-              <img src="media/2bh_flat.png"
-                   alt="Exterior of modern apartment with balcony and landscaped frontage"
+
+              <picture>
+                <source srcset="media/2bh_flat-dxt.webp" media="(min-width:992px)" type="image/webp">
+                <!-- for tab-->
+                 <source srcset="media/2bh_flat-tab.webp" media="(min-width:768px)" type="image/webp">
+                 <!-- for mobile case-->
+                  <source srcset="media/2bh_flat-mobile.webp" type="image/webp">
+            
+               <img src="media/2bh_flat.png"
+                   alt="Modern 2BHK flat exterior with balcony and green landscaping"
                    class="card-img-top img-fluid rounded-4"
+                   loading="lazy"
+                   width="800"
+                   height="600"
                    style="object-fit:cover;">
+              </picture>
             </div>
             <div class="card-body d-flex flex-column">
               <cite class="text-muted">Beverly Hills, California</cite>
@@ -344,7 +419,7 @@ properties meticulously tailored to your unique dream home vision.">
 
             <!-- Section Heading -->
             <div class="text-center mb-5">
-                <h2 class="display-1 display-lg-5 section-heading">What People Say<br>About Dwello</h2>
+                <h2 class="display-1 display-lg-5 section-heading">What People Say<br>About Egeal</h2>
             </div>
 
             <!-- Bootstrap Grid container for review cards -->
@@ -373,7 +448,7 @@ properties meticulously tailored to your unique dream home vision.">
                             </div>
                             <!-- Review Text -->
                             <p class="card-text text-secondary flex-grow-1">
-                                Dwello truly cares about their clients. They listened to my needs and preferences and helped me find the perfect home in the Bay Area. Their professionalism and attention to detail are unmatched.
+                                Egeal truly understands what their clients are looking for. The team paid close attention to my preferences and helped me find the perfect property in the Bay Area. Their knowledge and careful attention to every detail are outstanding.
                             </p>
                         </div>
                     </div>
@@ -403,6 +478,7 @@ properties meticulously tailored to your unique dream home vision.">
                             <!-- Review Text -->
                             <p class="card-text text-secondary flex-grow-1">
                                 I had a fantastic experience working with Dwello. Their expertise and personalized service exceeded my expectations. I found my dream home quickly and smoothly. Highly recommended!
+                            Thank you for choosing Dwello to guide you on your real estate journey!
                             </p>
                         </div>
                     </div>
@@ -432,6 +508,7 @@ properties meticulously tailored to your unique dream home vision.">
                             <!-- Review Text -->
                             <p class="card-text text-secondary flex-grow-1">
                                Dwello made my dream of owning a home a reality! Their team provided exceptional support and guided me through every step of the process. I couldn't be happier with my new home!
+                            Thank you for making your dream home search a reality with us!
                             </p>
                         </div>
                     </div>
@@ -474,7 +551,7 @@ properties meticulously tailored to your unique dream home vision.">
         <div class="row gy-4">
           <div class="col-12 col-md-4">
             <a class="navbar-brand fs-4 fw-bold" href="/">Dwello</a>
-            <p class="mb-0 text-muted">Bringing you closer to your dream home, one click at a time.</p>
+            <p class="mb-0 text-muted">Your perfect home is just a click away. Let us guide you there.</p>
           </div>
 
           <div class="col-6 col-md-2">
