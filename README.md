@@ -1,6 +1,7 @@
 # Find Your Dream Home – Landing Page (HTML/CSS/Bootstrap)
 
 This project is a front-end implementation of a Figma design for practice.
+Live preview=https://shivayadavtech.github.io/dream-home-landing-page/
 
 ## Design Credit
 
